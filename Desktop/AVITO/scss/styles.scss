@@ -4,54 +4,70 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #68bacc;
+    background-color: white;
 }
-
-.content{
+.header{
+    background-color: #73caf0;
+    .header_content{
+        height: 100px;
+        align-items: center;
+        max-width: 700px;
+        font-family: 'Segoe UI';
+        font-weight: 300;
+        font-size: 50px;
+        color: white;
+        display: flex;
+        span{
+            width: 400px;
+            margin-left: 30px;
+        }
+        img{
+            height: 80px;
+            width: 102px;
+        }
+    }
+    
+}
+.main{
     max-width: 1200px;
     height: 800px;
     margin-left: auto;
     margin-right: auto;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI';
     font-weight: 300;
     font-size: 50px;
+    
     .container{
         margin-top: 100px;
         .title_page{
-            height: 250px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            height: 200px;
+            text-align: center;
             span{
                 text-align: center;
-            }
-            img{
-                height: 133px;
-                width: 165px;
-                align-self: center;
             }
 
         }
         .search{
         max-width: 1200px;
         height: 200px;
-        margin-top: 50px;
         display: flex;
         flex-direction: column;
             input{
                 width: 800px;
-                height: 30px;
+                height: 40px;
                 margin-bottom: 50px;
                 align-self: center;
                 font-size: 20px;
                 outline: none;
+                background-color: #ebebeb;
+                border: none;
                 
             }
             button{
-                background-color: #3e5a96;
+                background-color: #68777d;
                 text-align: center;
                 display: flex;
                 align-items: center;

@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" href="css/styles.css"  rel="stylesheet"/>
+
     <title>Document</title>
 </head>
 <body>
-    <div class="content">
+    <div class="header">
+        <div class="header_content">
+            <span>Github Dashboard</span>
+            <img src="./img/Octocat.png" alt="cat">
+        </div>
+        
+    </div>
+    <div class="main">
         <div class="container">
             <div class="title_page">
                 <span>Поиск репозиториев GitHub №1</span>
-                <img src="./img/Octocat.png" alt="cat">
             </div>
-            <div class="search">
-                <input type="text">
-                <button type="submit" ><span>Найти репозиторий</span><img src="./img/4023817131558096454.svg" alt="."></button>
+            <div class="search" id="search">
+                <input type="text" placeholder="Найти репозиторий" id="input_user">
+                <button type="submit" id="submit_user"><span>Найти репозиторий</span><img src="./img/4023817131558096454.svg" alt="."></button>
             </div>
             <div class="repositories_list">
-
+                
             </div>
         </div>
     </div>
+    <script src="./js/script.js"></script>
+
 </body>
 </html>
