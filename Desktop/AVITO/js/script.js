@@ -1,9 +1,18 @@
 
-document.getElementById('submit_user').addEventListener('click', (e) => {
+getLocalValue = () => {
+      document.getElementById('input_user').value = localStorage.getItem('input_key');
+}
+window.addEventListener("load", (e) => {
     e.preventDefault();
-    var name = document.getElementById('input_user').value;
-
-    searchUsers(name);
+    getLocalValue();
+});
+document.getElementById('submit_user').addEventListener('click', (e) => {
+    let elem_input = document.getElementById('input_user');
+    let value = elem_input.value;
+    let key = elem_input.getAttribute('name');
+    localStorage.setItem(key, value);
+    
+    searchUsers(value);
 });
 
 searchUsers = (name) => {

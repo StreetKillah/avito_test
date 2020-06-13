@@ -8,7 +8,6 @@ body{
 .header{
     background-color: #73caf0;
     .header_content{
-        height: 100px;
         align-items: center;
         max-width: 700px;
         font-family: 'Segoe UI';
@@ -29,7 +28,6 @@ body{
 }
 .main{
     max-width: 1200px;
-    height: 800px;
     margin-left: auto;
     margin-right: auto;
     color: black;
@@ -40,7 +38,7 @@ body{
     font-size: 50px;
     
     .container{
-        margin-top: 100px;
+        margin-top: 50px;
         .title_page{
             height: 200px;
             text-align: center;
@@ -50,6 +48,7 @@ body{
 
         }
         .search{
+        margin-top: 80px;
         max-width: 1200px;
         height: 200px;
         display: flex;
